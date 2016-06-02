@@ -26,9 +26,9 @@
   <array>
     <dict>
       <key>Link</key>
-      <string>http://not-words.herokuapp.com/</string>
+      <string>http://www.weixinote.com/glossaries</string>
       <key>Name</key>
-      <string>NotWord</string>
+      <string>Glossary</string>
     </dict>
   </array>
   <key>Extension Description</key>
@@ -37,11 +37,11 @@
     <string>Add word to not word</string>
   </dict>
   <key>Extension Identifier</key>
-  <string>com.viasp.popclip.not-word</string>
+  <string>com.viasp.popclip.glossary</string>
   <key>Extension Name</key>
   <dict>
     <key>en</key>
-    <string>not-word</string>
+    <string>glossary</string>
   </dict>
   <key>Required Software Version</key>
   <integer>1</integer>

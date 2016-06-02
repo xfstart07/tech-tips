@@ -1,4 +1,4 @@
-<?php 
+<?php
 $contentType = "application/x-www-form-urlencoded";
 $userAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4";
 
@@ -10,7 +10,7 @@ $body = array(
 $fields_string = http_build_query($body);
 $ch = curl_init();
 
-$url = "http://not-words.herokuapp.com/api/v1/add_word";
+$url = "http://www.weixinote.com/api/v1/glossaries";
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_POSTFIELDS,$fields_string);
 curl_setopt($ch, CURLOPT_HEADER, 1);
@@ -23,12 +23,12 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, Array('Content-type: '.$contentType . '; Us
 curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
 curl_setopt($ch, CURLOPT_TIMEOUT, 6);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-$result = curl_exec($ch); 
+$result = curl_exec($ch);
 
 $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 
-if ($code == 201) {
+if ($code == 200) {
   exit(0);
 } else {
   exit(1);
