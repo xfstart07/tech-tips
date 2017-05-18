@@ -10,7 +10,7 @@ $body = array(
 $fields_string = http_build_query($body);
 $ch = curl_init();
 
-$url = "http://www.weixinote.com/api/v1/translates";
+$url = "http://www.weixinote.com/api/translates";
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_POSTFIELDS,$fields_string);
 curl_setopt($ch, CURLOPT_HEADER, 1);

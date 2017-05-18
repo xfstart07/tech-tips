@@ -1,0 +1,1 @@
+./word "$POPCLIP_TEXT"
